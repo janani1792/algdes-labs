@@ -9,36 +9,27 @@
 
 
 \title{Stable Matching Report}
-\author{Alice Cooper and Bob Marley}
+\author{Bryndís Eva Erlingsdóttir, David Godzsak, Erida Nurçe, Jorgel Keci, Karen Janani Salazar Lopez, Theis Trøjborg Jensen}
 
 \begin{document}
   \maketitle
 
   \section{Results}
 
-  Our implementation produces the expected results on all input--output file pairs, except {\tt sm-random-100.txt}, where it matches 54 with 12 instead of 2.
-  We have no idea why this happens.%
-  \sidenote{%
-  Complete the report by filling in your correct names,
-  filling in the parts marked $[\ldots]$,
-  and changing other parts wherever necessary.
-  For instance, if your implementation passes all tests, then write that.
-  Remove the sidenotes in your final hand-in.
-  }
-
-  On input {\tt sm-bbt-in.txt}, we produce the following matching:
-  \begin{quotation}
-    Sheldon--Amy, Rajesh--Penny, Howard--Bernadette, Leonard--Priya.  \sidenote{Replace with your results.}
-  \end{quotation}
+  Our implementation produces the expected results on all of the input-output file pairs. We tested all of them through the shell scripting provided.
+    
 
   \section{Implementation details}
-
-  The men's preferences are stored in a left-leaning red--black B-tree with $B=12$ and no inverse anti-snails,%
-  \sidenote{Replace with whatever data structure you actually use.}
-   as described in Section 5.2 of Kleinberg and Tardos, \emph{Algorithms Design}, Addison--Wesley 2013.%
-   \sidenote{If you refer to something, like a book or a stackexchange debate, or an external library, be professional about it.}
-  The women's preferences are stored in a heap.\sidenote{Replace with whatever data structure you actually use.}
-
+  
+   Both men and women preferences are stored in 2-Dimensional Integer arrays to make search time O(1). With the same purpose in mind, we      have used Arrays throughout the whole implementation.
+   We are parsing the input from the file and spliting them on men preferences and women preferences.
+   
+   
+   We then created an array named ranking to keep track of the women preferences in order.
+   
+   We used Stack to keep track of unmatched men.
+   In the current array we are storing the matches indexed by the women ID and simultaneously in result array we are storing the same        matches but this time indexed by the men's ID.
+   
   We can check find a free man who has not proposed to every woman in time $[\ldots]$,
   because we store $[\ldots]$.
 
