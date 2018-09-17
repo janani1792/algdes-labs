@@ -3,19 +3,25 @@ package dk.itu.b;
 import java.awt.geom.Point2D;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 class CP {
+    private static final String REGEX = "(\\w+)\\s+([-+]?\\d*\\.?\\d+(?:[eE][-+]?\\d+)?)\\s+([-+]?\\d*\\.?\\d+(?:[eE][-+]?\\d+)?)";
+    private static final Pattern pattern = Pattern.compile(REGEX);
+
     public static void main(String[] args) {
         File file = new File(args[0]);
         List<Point2D> points = readFile(file);
         double result = ClosestPoints.find(points);
 
-        System.out.format("%s: %d %f %n", args[0].substring(0, args[0].length() - 4).replace('-', '.'), points.size(), result);
+        System.out.format("../data/%s: %d %f %n", args[0].substring(0, args[0].length() - 4).replace('-', '.'), points.size(), result);
     }
 
     private static List<Point2D> readFile(File file) {
@@ -23,20 +29,13 @@ class CP {
 
         try (Scanner sc = new Scanner(file)) {
             while (sc.hasNextLine()) {
-                String a = sc.nextLine();
-                if (a.startsWith("EOF"))
-                    break;
-                if (a.startsWith("NAME")) {
-                    while (sc.hasNextLine()) {
-                        if (sc.nextLine().startsWith("NODE_COORD_SECTION")) {
-                            a = sc.nextLine();
-                            break;
-                        }
-                    }
-                }
-                String[] b = a.split(" ");
-                if (b.length >= 3) {
-                    Point2D p = new Point2D.Double(Double.parseDouble(b[1]), Double.parseDouble(b[2]));
+                Matcher m = pattern.matcher(sc.nextLine().trim());
+
+                if (m.matches()) {
+                    Double x = Double.parseDouble(m.group(2));
+                    Double y = Double.parseDouble(m.group(3));
+
+                    Point2D p = new Point2D.Double(x, y);
                     points.add(p);
                 }
             }
@@ -130,4 +129,26 @@ class Pair<G> {
     public G getRight() {
         return right;
     }
+}
+
+class Point {
+    private BigDecimal x;
+    private BigDecimal y;
+
+    public Point(BigDecimal x, BigDecimal y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public BigDecimal getX() {
+        return x;
+    }
+
+    public BigDecimal getY() {
+        return y;
+    }
+
+//    public BigDecimal distance(BigDecimal ){
+//
+//    }
 }

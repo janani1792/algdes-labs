@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b55771a-b3a5-4b16-90de-a30be7eff795" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/dk/itu/b/CP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dk/itu/b/CP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/pcb442-tsp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../data/pcb442-tsp.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/pla85900-tsp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../data/pla85900-tsp.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/rd100-tsp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../data/rd100-tsp.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../matching/doc/report.pdf" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dk/itu/b/CP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+            <state relative-caret-position="189">
+              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1008#1009#0" expanded="true" />
@@ -33,8 +37,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out/production/closest-points-divide-conquer/dk/itu/b/CP.class">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_25.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="94" column="34" lean-forward="true" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -43,6 +51,7 @@
     <findStrings>
       <find>Point2D</find>
       <find>sys</find>
+      <find>fileRe</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -52,6 +61,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/dk/itu/b/Main.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_25.txt" />
         <option value="$PROJECT_DIR$/src/dk/itu/b/CP.java" />
       </list>
     </option>
@@ -144,7 +154,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537190092432" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537194630379" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -166,7 +177,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="dk.itu.b.CP" />
       <module name="closest-points-divide-conquer" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;../data/pcb442-tsp.txt&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;../data/a280-tsp.txt&quot;" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -189,23 +200,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537171495199</updated>
-      <workItem from="1537171500814" duration="18484000" />
+      <workItem from="1537171500814" duration="22735000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18484000" />
+    <option name="totallyTimeSpent" value="22735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1024" height="741" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" sideWeight="0.50162864" side_tool="true" weight="0.32991803" />
       <window_info id="Capture Tool" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.32991803" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837133" weight="0.32991803" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" weight="0.32888147" />
       <window_info anchor="bottom" id="AWS Tail" />
@@ -216,8 +226,8 @@
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32888147" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32888147" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32888147" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32888147" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6527546" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -236,6 +246,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dk/itu/b/CP.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -323,12 +345,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/closest-points-divide-conquer/dk/itu/b/CP.class">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_25.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="94" column="34" lean-forward="true" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dk/itu/b/CP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        <state relative-caret-position="189">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1008#1009#0" expanded="true" />
