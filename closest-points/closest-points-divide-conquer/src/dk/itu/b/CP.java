@@ -3,7 +3,6 @@ package dk.itu.b;
 import java.awt.geom.Point2D;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -129,26 +128,4 @@ class Pair<G> {
     public G getRight() {
         return right;
     }
-}
-
-class Point {
-    private BigDecimal x;
-    private BigDecimal y;
-
-    public Point(BigDecimal x, BigDecimal y) {
-        this.x = x;
-        this.y = y;
-    }
-
-    public BigDecimal getX() {
-        return x;
-    }
-
-    public BigDecimal getY() {
-        return y;
-    }
-
-//    public BigDecimal distance(BigDecimal ){
-//
-//    }
 }
